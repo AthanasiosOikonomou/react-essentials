@@ -5,13 +5,14 @@ function randomInt(max) {
 }
 
 function Header() {
+  const description = reactDescriptions[randomInt(3)];
   return (
     <header>
       <img src="src/assets/react-core-concepts.png" alt="Stylized atom" />
       <h1>React Essentials</h1>
       <p>
-        {reactDescriptions[randomInt(3)]} React concepts you will need for
-        almost any app you are going to build!
+        {description} React concepts you will need for almost any app you are
+        going to build!
       </p>
     </header>
   );
